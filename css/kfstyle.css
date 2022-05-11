@@ -1,3 +1,22 @@
 body {
+    /* background: lightgreen url('img/background.jpg') center center no-repeat; */
     -webkit-text-size-adjust: 100%;
-    }
+}
+/* 追加ボタンの書式設定 */
+.addition {
+    display: flex;
+    margin: 10px auto;
+}
+
+/* 削除ボタンの書式設定 */
+.deletion {
+    flex-direction: row;
+    width: 5%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* クリックしたボタンを非表示にし、擬似的に削除した風にする */
+.hidden {
+    display: none;
+}
