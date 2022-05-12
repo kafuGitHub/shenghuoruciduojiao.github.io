@@ -5,15 +5,65 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
     <link rel="stylesheet" href="css/kfstyle.css">
     <meta name="viewport" content="width=device-width">
-    <title>给TA贴几个标签不</title>
+    <title>给TA贴几个标签!</title>
+
+
+    <!-- <script type="text/javascript">
+      function dispButton(){
+       
+        var f = document.fm;
+       
+        for(var i = 0 ; i < f.elements.length ; i++){
+          if(f.elements[i].type=='button'){
+            alert(i + '番目のボタン名は' 
+              + f.elements[i].value + 'です' );
+          }
+        }	
+       
+      }
+      </script> -->
+
   </head>
+
   <body background="img/background.jpg">
-    <hr size="3">
+    <!-- <hr size="3">
     <h3 style="text-align:center;color:white">给TA贴几个标签不</h3>
     <hr size="3">
     <p style="color:white">贴sei？</p>
     <script src="js/tiesei.js"></script>
+
+    <form name="fm">
+      フォーム内のボタン名を表示<br>
+      <input type="button" name="button1" value="ボタン１">
+      <input type="button" name="button2" value="ボタン２">
+      <input type="button" name="button3" value="ボタン３">
+      <input type="button" name="button4" value="ボタン４">
+      <input type="button" name="button5" value="ボタン５">
+      <input type="button" value="確認" onclick="dispButton()">
+      </form> -->
+      <ul id="shopinfo">
+        <li style="color:white";id="m01">リストランテ南青山</li>
+        <li style="color:white";id="m02">東京都港区南青山</li>
+      </ul>
+      
+      <p style="color:white">美味しかったです。</p>
+      
+      <button onClick="getElement(1);">前にノードを追加</button>
+      <button onClick="getElement(2);">子ノードの先頭にノードを追加</button>
+      
+      <script>
+      function getElement(pos){
+          let element = document.getElementById('shopinfo');
+      
+          if (pos == 1){
+               element.insertAdjacentHTML('beforebegin', '<p style="color:white">ランチを食べました</p>');
+          }else{
+               element.insertAdjacentHTML('afterbegin', '<li style="color:white;id="m00">洋食屋</li>');
+          }
+      }
+      </script>
   </body>
+
 </html>
 
 
