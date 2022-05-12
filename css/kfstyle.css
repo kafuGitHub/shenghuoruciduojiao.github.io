@@ -1,7 +1,8 @@
 body {
-    /* background: lightgreen url('img/background.jpg') center center no-repeat; */
     -webkit-text-size-adjust: 100%;
+    color: #ffffff;
 }
+
 /* 追加ボタンの書式設定 */
 .addition {
     display: flex;
